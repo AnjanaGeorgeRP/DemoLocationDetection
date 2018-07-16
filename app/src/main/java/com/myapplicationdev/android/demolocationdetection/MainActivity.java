@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                 }
             }
-
-            ;
         };
         // UI components handlers
 
@@ -116,21 +114,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else {
             return false;
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case FINE_LOCATION_PERMISSION_REQUEST: {
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                } else {
-
-                    Toast.makeText(MainActivity.this, "Permission not granted to retrieve location info", Toast.LENGTH_LONG).show();
-                }
-            }
         }
     }
 
